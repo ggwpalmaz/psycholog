@@ -1,0 +1,136 @@
+.online {
+  margin: 126px 0 $margin-bot;
+  border-radius: 24px;
+  background: rgba(0, 185, 182, 0.1);
+  display: flex;
+  gap: 20px;
+  padding-bottom: 50px;
+  @media (max-width: 1240px) {
+    margin: 0 40px 50px 40px;
+  }
+  @media (max-width: 1025px) {
+    margin: 124px 40px 140px 40px;
+    padding-bottom: 48px;
+  }
+  @media (max-width: 769px) {
+    margin: 130px 40px 136px 40px;
+    padding: 0 30px 48px 0;
+  }
+  @media (max-width: 700px) {
+    margin: 130px 0px 146px;
+    padding: 0 20px 48px;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__right {
+    margin-top: 49px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @media (max-width: 769px) {
+      gap: 36px;
+    }
+    @media (max-width: 369px) {
+      gap: 36px;
+      margin-top: 22px;
+    }
+  }
+
+  &__list {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__title {
+    color: $color;
+    font-family: $font-family-bold;
+    font-size: $font-size-36;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    @media (max-width: 1025px) {
+      font-size: $font-size-32;
+      line-height: 38.4px;
+    }
+    @media (max-width: 769px) {
+      font-size: $font-size-28;
+      line-height: 33.6px;
+    }
+    @media (max-width: 369px) {
+      text-align: center;
+      font-size: $font-size-24;
+      line-height: 28.8px;
+    }
+  }
+  &__sub {
+    position: relative;
+    color: $color;
+    font-family: $font-family-bold;
+    font-size: $font-size-20;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 5px;
+    @media (max-width: 769px) {
+      font-size: $font-size-18;
+      line-height: 21.6px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: -10px;
+      border-radius: 50%;
+      background: rgb(0, 185, 182);
+      width: 5px;
+      height: 5px;
+    }
+  }
+  &__text {
+    color: $color;
+    font-family: $font-family-reg;
+    font-size: $font-size-18;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+    @media (max-width: 769px) {
+      font-size: $font-size-16;
+      line-height: 22.4px;
+    }
+  }
+  &__left {
+    margin-top: -70px;
+    @media (max-width: 1025px) {
+      margin-top: -52px;
+    }
+  }
+  &__pic {
+    display: block;
+    width: 360px;
+    height: 540px;
+    @media (max-width: 1025px) {
+      width: 301px;
+      height: 423px;
+    }
+    @media (max-width: 769px) {
+      width: 216px;
+      height: 352px;
+    }
+    @media (max-width: 360px) {
+      width: 160px;
+      height: 320px;
+    }
+    &-img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      @media (max-width: 769px) {
+        object-fit: cover;
+      }
+    }
+  }
+}

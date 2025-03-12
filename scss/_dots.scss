@@ -1,0 +1,30 @@
+.dots {
+  transition: 1s;
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+  &__item {
+    cursor: pointer;
+    border-radius: 6px;
+    width: 20px;
+    height: 6px;
+    background-color: #00b9b6;
+    opacity: 0.25;
+    &_active {
+      width: 30px;
+      opacity: 1;
+    }
+  }
+  &__item1 {
+    cursor: pointer;
+    border-radius: 6px;
+    width: 20px;
+    height: 6px;
+    background-color: #00b9b6;
+    opacity: 0.25;
+    &_active {
+      width: 30px;
+      opacity: 1;
+    }
+  }
+}

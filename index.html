@@ -1,0 +1,2410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="logo">
+          <a class="logo__link" href="#"
+            ><picture class="logo__pic">
+              <source type="image/avif" srcset="./img/logo.avif" />
+              <source type="image/webp" srcset="./img/logo.webp" />
+              <img
+                class="logo__pic-img"
+                src="./img/logo.png"
+                alt="logo"
+              /> </picture
+          ></a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="">About us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="header__btns">
+          <h2 class="visually-hidden">buttons</h2>
+          <section class="header__wrap">
+            <h3 class="visually-hidden">languages</h3>
+            <picture class="header__icon header__icon_en">
+              <source type="image/avif" srcset="./img/usa.avif" />
+              <source type="image/webp" srcset="./img/usa.webp" />
+              <img
+                class="header__icon-img"
+                src="./img/usa.png"
+                alt="usa"
+                loading="lazy"
+              />
+            </picture>
+            <picture class="header__icon header__icon_ru">
+              <source type="image/avif" srcset="./img/ru.avif" />
+              <source type="image/webp" srcset="./img/ru.webp" />
+              <img
+                class="header__icon-img"
+                src="./img/ru.png"
+                alt="usa"
+                loading="lazy"
+              />
+            </picture>
+            <select class="header__select" name="lang">
+              <option class="header__en" value="en">EN</option>
+              <option class="header__ru" value="ru">RU</option>
+            </select>
+          </section>
+          <button class="btn btn_none">Войти</button>
+          <button class="btn btn_tablet">Начать беседу</button>
+          <input class="header__check" id="header__checkbox" type="checkbox" />
+          <label class="header__label" for="header__checkbox"> </label>
+        </section>
+      </header>
+      <main class="main">
+        <section class="session">
+          <h2 class="visually-hidden">session</h2>
+          <section class="session__left">
+            <p class="session__sub">+300 прошедших отбор психологов</p>
+            <h3 class="session__title">Сессии с психологом Онлайн</h3>
+            <button class="btn btn_pd">Начать беседу</button>
+          </section>
+          <section class="session__right">
+            <picture class="session__pic">
+              <source type="image/avif" srcset="./img/headman.avif" />
+              <source type="image/webp" srcset="./img/headman.webp" />
+              <img class="session__pic-img" src="./img/headman.png" alt="man" />
+            </picture>
+          </section>
+        </section>
+        <section class="help main__help">
+          <h2 class="visually-hidden">help</h2>
+          <article class="video help__video">
+            <h3 class="visually-hidden">video</h3>
+            <iframe
+              class="iframe"
+              src="https://www.youtube.com/embed/TtkFsfOP9QI?si=8eFiQw2jJnzK1vLn"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </article>
+          <article class="free help__free">
+            <h3 class="free__title">Скачайте бесплатно приложение SPEAK</h3>
+            <section class="free__content">
+              <h4 class="visually-hidden">content</h4>
+              <div class="free__wrap">
+                <svg class="free__svg" viewBox="0 0 64 64" fill="none">
+                  <rect
+                    x="0.818558"
+                    y="0.663574"
+                    width="62.363"
+                    height="62.6733"
+                    rx="12"
+                    fill="url(#pattern0_1985_324)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_1985_324"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_1985_324"
+                        transform="scale(0.00497512 0.0049505)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_1985_324"
+                      width="201"
+                      height="202"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMkAAADKCAMAAAA4jJSZAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAADNQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAowVGyQAAABF0Uk5TABBAMCCAkMD/UPDgsNCgYHCCRj/5AAAGa0lEQVR4nO2d6ZqcKhRFW5wQLfX9n/ZW3yQ9WMiZNmgn7L/JV7oaOMCZfHurqqqqqqqqqqqqqqr6+9U41179DjZ1rh/G0b9rvPpd1Gqmfgz+UzGS1s9L74q/mkTt8PAHxUjc73+6K820hiNGmuSpsE7F35NQN8wRDJLkdjDTGMfgkDw1913xV45qOxkONslTyw2WTJKDTfL8jxezuPN5JSS5lqUZCA4RyfM/X3UimGJm10Li/dAUp3gOyEpziEl8KG+T2/RK15I8zVjhYdkYM0tH4kPRlU8vdT2J930xjmbhguhI/FhohjUvJ140iX8UsccSEC2JDwVQRCBqEh+27CQiED2J97lRWPshhCQzSi8DMZH4nBsL+yUgJBmXfcPc2UEkPmS7TPJ3RAyJf2TaIicxiJXEr1lA5HPLTuL3HCRSuwUh8RlWfacAAZBkWCrCPRFF4gc0SKMBQZDAN0jNKolfmqQkDzAJ797+RfPY91NsaxMfFLAHMNle8him84XaSa35DCURrPd5Jw4ZpOfyKOigsP+OLGd114smKzLG13KfyT7zJUIVrwKeJHfWA2eRwRRMMuD0Yp2CxV5dx51jwN2RsUxULl3mLoVbKIwNXnnB4/mXcSSMzUzrZGd5nXAkG/ks/ZWIE77AkdDT2WInaZSCJKZbKj3BcLaLjDLYQlHkvRoX6SL3MOPvU+dT3L2RIjGfVtM7L9DDogm7i5Q+6QNvjdlJkjZlARD8EbXig/kJCfsF9amSVti+JNvT+QW9Z5EkADN5Zr+wt3jytIKwLvHsEXA8iD5BIuZy+7pW4NkftCcVY/L7w7CseFcqSQLyRDf757jMQ45AEH3lnlF/vsb174o6/QBi3CFyxZ/Aoq9aT5SbpJimxfJ3hSwBKLR4Psg5f46GWVy/cFgTvu1bSOKrn9ftxktGGtIK9y3M0IQZH8N2w6IgRVrBL423wxGH577hrPt9Jhsv8JDSvGQ7g4ikSfaIKIzX4+ji2Kc4F247oEH50IXbDucYKaa5ZmxkealcjVTUO4O4EWCxHsVhgIv+FabsNJNmN4i0ltw80fbroEfB+8250xOjgne1DKb4wFKsVCs7iiD55fYoxeqbCqCU8ji5zMvelytsjHjV4SrkPONVmNqUJ6f+VZyq3x+CIqhqvDsKP2Xu/ihve+4pVrBw9hhPQ6uky5zoJGFUiWLTT7lo0xiQYFE/npptyQaDzFrhaXrtSoTRFU1ymiw04Sofn9tXMA68vuk6nKv9yO84GF9Mua0+pXYbRrNdu3xQPtQdmsb9zEH5UOP6RXkeQJuvzjlzX0QlDvL49dnHbtmsf6FuW4U0uJrG/duTQ28f7W4X3dRAa/613AXi+mg2/p6DmV5R/xbGnHQD06RBzpEnjjqQZWTe1ey51QmPI8rI81wb9htXIiIH861x3LP2hZJYlLiEdwaK2TeRfAbuEEG3NjMv+fQOBhuUhtwprYUhRNwa54Um55fVeBGjDqzBJ22x8fepmxLuZEc6/42/T/08blDI6WXcUKifxw0KWRhiSzugqzVgd6DMJIxqDZSL8HoS1Pwi14mRhNOrAONNJ22XcRfmHFMhS4VO7TE+gJVai6ihoTPHjA/gNe2yo9DZfOadi3fTnq2+I9rVYi4tZmZu2zwUnJQLs8OeXa1heBIrgmw/drPTOrQ9gTuePz/rPf4oVY92Zhgc4VsRhEDkvkl2CBxxKBKlOwfRdzMEoXzI7VSYALUwzRjb/fi/IB4DcV+6sJBFDG1v7x2tkCYHfV57d4Yj7nOHu9Cpw7iP2EwTjzHwPqevcUD06PTI5Ch1jQOGBBlm1M4vDAkyX00xt3Ek2MivssQ0tjWLScCZw+wPhXwTopct/Ct8qhQUAAm+1bvs0xQ4kgw5nZrKJjtJlpQVRWWTmSRT7xM5ipUkWxMXMYqRJGO2sBTFRpI17Zn5RTAISeb8bZkxtpBkb3QkKgcykJT4qJago4SepEySML+ERktS7JuA7MomJUmxKtM3dsGZiqRw9yzewteQlByQ32/EsMdyknKl2F9Fe0OlJIisV50oT7uQ5JIvsv5RelwkJCFL/0eJtsS9mE8yXzavvurc7c4lGe/T6i/++XgeSfm+MYSmSNo/TXI7jF/q9kNJRpok+Tmh6/Ve/zNTJOFW7eKScq7vlzG6kBv3Qxiqqqqqqqqqqqqqqqr+df0Hp6SOdaVR8REAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+              </div>
+              <section class="free__wrapper">
+                <h5 class="free__sub">Speak</h5>
+                <p class="free__text">онлайн сессии с психологом</p>
+                <p class="free__text">доступно для iOS и Android</p>
+              </section>
+            </section>
+            <footer class="free__foot">
+              <a class="free__link" href=""
+                ><picture class="free__pic">
+                  <source type="image/avif" srcset="./img/appsotrefff.avif" />
+                  <source type="image/webp" srcset="./img/appsotrefff.webp" />
+                  <img
+                    class="free__pic-img"
+                    src="./img/appsotrefff.png"
+                    alt="appstore"
+                    loading="lazy"
+                  /> </picture></a
+              ><a class="free__link" href=""
+                ><picture class="free__pic">
+                  <source type="image/avif" srcset="./img/playstore.avif" />
+                  <source type="image/webp" srcset="./img/playstore.webp" />
+                  <img
+                    class="free__pic-img"
+                    src="./img/playstore.png"
+                    alt="playstore"
+                    loading="lazy"
+                  /> </picture
+              ></a>
+            </footer>
+          </article>
+        </section>
+        <section class="people">
+          <h2 class="people__title">
+            Психологи работающие с актуальными темами
+          </h2>
+          <section class="people__tags">
+            <h3 class="visually-hidden">tags</h3>
+            <p class="people__tag">Чувства</p>
+            <p class="people__tag">Одиночество</p>
+            <p class="people__tag people__tag_clr">Вредные привычки</p>
+            <p class="people__tag">Отношения</p>
+            <p class="people__tag">Работа</p>
+            <p class="people__tag">Смыслы</p>
+            <p class="people__tag">Одиночество</p>
+            <p class="people__tag">Одиночество</p>
+            <p class="people__tag">Отношения с близкими</p>
+            <button class="btn btn_pd btn__pad">+ 300 психологов</button>
+          </section>
+          <div class="people__wraps">
+            <div class="people__inner">
+              <section class="people__cards">
+                <h3 class="visually-hidden">cards</h3>
+                <article class="people__card">
+                  <picture class="people__pic"
+                    ><source
+                      type="image/avif"
+                      srcset="./img/photo11.avif"
+                      media="(max-width:730px)"
+                    />
+                    <source type="image/avif" srcset="./img/photo1.avif" />
+                    <source
+                      type="image/webp"
+                      srcset="./img/photo11.webp"
+                      media="(max-width:730px)"
+                    />
+                    <source type="image/webp" srcset="./img/photo1.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo1.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Илья Благов</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic"
+                    ><source
+                      type="image/avif"
+                      srcset="./img/photo11.avif"
+                      media="(max-width:730px)"
+                    />
+                    <source type="image/avif" srcset="./img/photo1.avif" />
+                    <source
+                      type="image/webp"
+                      srcset="./img/photo11.webp"
+                      media="(max-width:730px)"
+                    />
+                    <source type="image/webp" srcset="./img/photo1.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo1.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Илья Благов</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic"
+                    ><source
+                      type="image/avif"
+                      srcset="./img/photo11.avif"
+                      media="(max-width:730px)"
+                    />
+                    <source type="image/avif" srcset="./img/photo1.avif" />
+                    <source
+                      type="image/webp"
+                      srcset="./img/photo11.webp"
+                      media="(max-width:730px)"
+                    />
+                    <source type="image/webp" srcset="./img/photo1.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo1.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Илья Благов</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic"
+                    ><source
+                      type="image/avif"
+                      srcset="./img/photo11.avif"
+                      media="(max-width:730px)"
+                    />
+                    <source type="image/avif" srcset="./img/photo1.avif" />
+                    <source
+                      type="image/webp"
+                      srcset="./img/photo11.webp"
+                      media="(max-width:730px)"
+                    />
+                    <source type="image/webp" srcset="./img/photo1.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo1.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Илья Благов</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic"
+                    ><source
+                      type="image/avif"
+                      srcset="./img/photo11.avif"
+                      media="(max-width:730px)"
+                    />
+                    <source type="image/avif" srcset="./img/photo1.avif" />
+                    <source
+                      type="image/webp"
+                      srcset="./img/photo11.webp"
+                      media="(max-width:730px)"
+                    />
+                    <source type="image/webp" srcset="./img/photo1.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo1.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Илья Благов</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+              </section>
+              <section class="people__cards">
+                <h3 class="visually-hidden">cards</h3>
+
+                <article class="people__card">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo2.avif" />
+                    <source type="image/webp" srcset="./img/photo2.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo2.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Иванна Есина</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo2.avif" />
+                    <source type="image/webp" srcset="./img/photo2.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo2.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Иванна Есина</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo2.avif" />
+                    <source type="image/webp" srcset="./img/photo2.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo2.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Иванна Есина</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo2.avif" />
+                    <source type="image/webp" srcset="./img/photo2.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo2.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Иванна Есина</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo2.avif" />
+                    <source type="image/webp" srcset="./img/photo2.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo2.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Иванна Есина</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+              </section>
+              <section class="people__cards">
+                <h3 class="visually-hidden">cards</h3>
+                <article class="people__card">
+                  <picture class="people__pic"
+                    ><source
+                      type="image/avif"
+                      srcset="./img/photo11.avif"
+                      media="(max-width:730px)"
+                    />
+                    <source type="image/avif" srcset="./img/photo1.avif" />
+                    <source
+                      type="image/webp"
+                      srcset="./img/photo11.webp"
+                      media="(max-width:730px)"
+                    />
+                    <source type="image/webp" srcset="./img/photo1.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo1.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Илья Благов</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo2.avif" />
+                    <source type="image/webp" srcset="./img/photo2.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo2.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Иванна Есина</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card people__card_pd">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo3.avif" />
+                    <source type="image/webp" srcset="./img/photo3.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo3.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name people__name_mg">Артур Островский</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo4.avif" />
+                    <source type="image/webp" srcset="./img/photo4.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo4.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Юля Заграничная</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo5.avif" />
+                    <source type="image/webp" srcset="./img/photo5.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo5.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Андрей Ян</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+              </section>
+              <section class="people__cards">
+                <h3 class="visually-hidden">cards</h3>
+                <article class="people__card people__card_pd">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo3.avif" />
+                    <source type="image/webp" srcset="./img/photo3.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo3.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name people__name_mg">Артур Островский</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card people__card_pd">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo3.avif" />
+                    <source type="image/webp" srcset="./img/photo3.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo3.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name people__name_mg">Артур Островский</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card people__card_pd">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo3.avif" />
+                    <source type="image/webp" srcset="./img/photo3.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo3.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name people__name_mg">Артур Островский</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card people__card_pd">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo3.avif" />
+                    <source type="image/webp" srcset="./img/photo3.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo3.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name people__name_mg">Артур Островский</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card people__card_pd">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo3.avif" />
+                    <source type="image/webp" srcset="./img/photo3.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo3.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name people__name_mg">Артур Островский</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+              </section>
+              <section class="people__cards">
+                <h3 class="visually-hidden">cards</h3>
+                <article class="people__card">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo5.avif" />
+                    <source type="image/webp" srcset="./img/photo5.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo5.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Андрей Ян</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo5.avif" />
+                    <source type="image/webp" srcset="./img/photo5.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo5.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Андрей Ян</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo5.avif" />
+                    <source type="image/webp" srcset="./img/photo5.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo5.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Андрей Ян</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo5.avif" />
+                    <source type="image/webp" srcset="./img/photo5.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo5.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Андрей Ян</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+                <article class="people__card">
+                  <picture class="people__pic">
+                    <source type="image/avif" srcset="./img/photo5.avif" />
+                    <source type="image/webp" srcset="./img/photo5.webp" />
+                    <img
+                      class="people__pic-img"
+                      src="./img/photo5.png"
+                      alt="man"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <h4 class="people__name">Андрей Ян</h4>
+                  <footer class="people__foot">
+                    <div class="people__wrap">
+                      <svg
+                        class="people__stars"
+                        viewBox="0 0 90 14"
+                        fill="none"
+                      >
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                    <a class="people__link" href=""
+                      ><svg
+                        class="people__arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          stroke="#00B9B6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2 12h20m0 0-8 7m8-7-8-7"
+                        />
+                      </svg>
+                    </a>
+                  </footer>
+                </article>
+              </section>
+            </div>
+          </div>
+
+          <div class="dots">
+            <div class="dots__item"></div>
+            <div class="dots__item"></div>
+            <div class="dots__item dots__item_active"></div>
+            <div class="dots__item"></div>
+            <div class="dots__item"></div>
+          </div>
+        </section>
+        <section class="about">
+          <h2 class="visually-hidden">Help you</h2>
+          <section class="about__left">
+            <h3 class="about__title">Поможем вам</h3>
+            <ul class="about__list">
+              <li class="about__items">
+                <div class="about__wrap">
+                  <svg class="about__svg" viewBox="0 0 10 11" fill="none">
+                    <path
+                      stroke="#00B9B6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.333 3.417 3.89 8 1.667 5.71"
+                    />
+                  </svg>
+                </div>
+                <p class="about__text">
+                  Разрешить причины сложных отношений с партнером
+                </p>
+              </li>
+              <li class="about__items">
+                <div class="about__wrap">
+                  <svg class="about__svg" viewBox="0 0 10 11" fill="none">
+                    <path
+                      stroke="#00B9B6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.333 3.417 3.89 8 1.667 5.71"
+                    />
+                  </svg>
+                </div>
+                <p class="about__text about__text_fz">
+                  Снять или снизить остроту переживаний
+                </p>
+              </li>
+              <li class="about__items">
+                <div class="about__wrap">
+                  <svg class="about__svg" viewBox="0 0 10 11" fill="none">
+                    <path
+                      stroke="#00B9B6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.333 3.417 3.89 8 1.667 5.71"
+                    />
+                  </svg>
+                </div>
+                <p class="about__text about__text_fz">
+                  Справиться с выгоранием на работе и найти мотивацию
+                </p>
+              </li>
+              <li class="about__items">
+                <div class="about__wrap">
+                  <svg class="about__svg" viewBox="0 0 10 11" fill="none">
+                    <path
+                      stroke="#00B9B6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.333 3.417 3.89 8 1.667 5.71"
+                    />
+                  </svg>
+                </div>
+                <p class="about__text about__text_fz">
+                  Понять себя в отношениях с близкими людьми
+                </p>
+              </li>
+              <li class="about__items">
+                <div class="about__wrap">
+                  <svg class="about__svg" viewBox="0 0 10 11" fill="none">
+                    <path
+                      stroke="#00B9B6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.333 3.417 3.89 8 1.667 5.71"
+                    />
+                  </svg>
+                </div>
+                <p class="about__text about__text_fz">
+                  Найти себя и понимать свои желания
+                </p>
+              </li>
+              <li class="about__items">
+                <div class="about__wrap">
+                  <svg class="about__svg" viewBox="0 0 10 11" fill="none">
+                    <path
+                      stroke="#00B9B6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.333 3.417 3.89 8 1.667 5.71"
+                    />
+                  </svg>
+                </div>
+                <p class="about__text about__text_fz">
+                  Исследовать и управлять изменениями в своей жизни
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="about__right">
+            <picture class="about__pic">
+              <source type="image/avif" srcset="./img/helpu.avif" />
+              <source type="image/webp" srcset="./img/helpu.webp" />
+              <img
+                class="about__pic-img"
+                src="./img/helpu.png"
+                alt="help"
+                loading="lazy"
+              />
+            </picture>
+          </section>
+        </section>
+        <section class="online">
+          <h2 class="visually-hidden">opportunity online</h2>
+          <section class="online__left">
+            <h3 class="visually-hidden">picture</h3>
+            <picture class="online__pic">
+              <source type="image/avif" srcset="./img/phoneman.avif" />
+              <source type="image/webp" srcset="./img/phoneman.webp" />
+              <img
+                class="online__pic-img"
+                src="./img/phoneman.png"
+                alt="phone"
+                loading="lazy"
+              />
+            </picture>
+          </section>
+          <section class="online__right">
+            <h3 class="online__title">
+              Преимущества онлайн сессий с психологом
+            </h3>
+            <ul class="online__list">
+              <li class="online__items">
+                <p class="online__sub">Занимайтесь где и как удобно</p>
+                <p class="online__text">
+                  Дома или в поездке и в любом часовом поясе
+                </p>
+              </li>
+              <li class="online__items">
+                <p class="online__sub">Меньше забот- больше мотивации</p>
+                <p class="online__text">
+                  Не тратьте время на дорогу и управляйте занятиями в два клика
+                </p>
+              </li>
+              <li class="online__items">
+                <p class="online__sub">Доверяйте себе</p>
+                <p class="online__text">
+                  Выбирайте среди проверенных психологов, которые
+                  специаллизируются на ваших запросах
+                </p>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section class="work">
+          <h2 class="work__title">Как мы отбираем специалистов?</h2>
+          <p class="work__sub">Отбор проходят меньше 10% специалистов</p>
+          <section class="work__content">
+            <h3 class="visually-hidden">work</h3>
+            <section class="work__left">
+              <h4 class="visually-hidden">list</h4>
+              <ul class="work__list">
+                <li class="work__items">
+                  <h5 class="work__ttl">Документы об образовании</h5>
+                  <p class="work__text">
+                    Обязательно иметь высшее психологическое образование и
+                    сертификаты для ведения психотерапии
+                  </p>
+                </li>
+                <li class="work__items work__items_bf2">
+                  <h5 class="work__ttl">
+                    Опыт частной практики и личной терапии
+                  </h5>
+                  <p class="work__text">
+                    Нужно не менее 3-х лет частной практики, личная терапия и
+                    регулярные супервизии
+                  </p>
+                </li>
+                <li class="work__items work__items_bf3">
+                  <h5 class="work__ttl">
+                    Собеседование с нашим экспертом-ментором
+                  </h5>
+                  <p class="work__text">
+                    Отслеживаются коммуникативные способности, уровень эмпатии,
+                    манера и стиль беседы, проффесиональные компетенции
+                  </p>
+                </li>
+              </ul>
+            </section>
+            <section class="work__right">
+              <picture class="work__pic">
+                <source type="image/avif" srcset="./img/howwe.avif" />
+                <source type="image/webp" srcset="./img/howwe.webp" />
+                <img
+                  class="work__pic-img"
+                  src="./img/howwe.png"
+                  alt="manphone"
+                  loading="lazy"
+                />
+              </picture>
+            </section>
+          </section>
+        </section>
+        <section class="service">
+          <h2 class="service__title">О сервисе</h2>
+          <section class="service__content">
+            <h3 class="visually-hidden">video</h3>
+            <section class="service__left">
+              <h4 class="visually-hidden">video</h4>
+              <article class="video">
+                <h4 class="visually-hidden">video</h4>
+                <iframe
+                  class="iframe iframe_wd"
+                  src="https://www.youtube.com/embed/TtkFsfOP9QI?si=8eFiQw2jJnzK1vLn"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </article>
+            </section>
+            <section class="service__right">
+              <h4 class="visually-hidden">numbers</h4>
+              <article class="service__items">
+                <h5 class="service__ttl">900 +</h5>
+                <p class="service__text">регистраций вчера</p>
+              </article>
+              <article class="service__items">
+                <h5 class="service__ttl">75 000 +</h5>
+                <p class="service__text">проведено сессий</p>
+              </article>
+              <article class="service__items service__items_mg">
+                <h5 class="service__ttl">354 +</h5>
+                <p class="service__text">психологов</p>
+              </article>
+            </section>
+          </section>
+          <footer class="service__foot">
+            <article class="service__card">
+              <h3 class="visually-hidden">card</h3>
+              <picture class="service__pic">
+                <source
+                  type="image/avif"
+                  srcset="./img/podbor1.avif"
+                  media="(max-width:769px)"
+                />
+                <source type="image/avif" srcset="./img/calend.avif" />
+                <source
+                  type="image/webp"
+                  srcset="./img/podbor1.webp"
+                  media="(max-width:769px)"
+                />
+                <source type="image/webp" srcset="./img/calend.webp" />
+                <img
+                  class="service__pic-img"
+                  src="./img/calend.png"
+                  alt="calendar"
+                  loading="lazy"
+                />
+              </picture>
+              <section class="service__wrap">
+                <h4 class="service__name">Подбор “По позже”</h4>
+                <p class="service__text service__text_fz">
+                  Подбор с возможностью бронирование сессии на будущее
+                </p>
+              </section>
+            </article>
+            <article class="service__card">
+              <h3 class="visually-hidden">card</h3>
+              <picture class="service__pic">
+                <source
+                  type="image/avif"
+                  srcset="./img/podbor2.avif"
+                  media="(max-width:769px)"
+                />
+                <source type="image/avif" srcset="./img/watch.avif" />
+                <source
+                  type="image/webp"
+                  srcset="./img/podbor2.webp"
+                  media="(max-width:769px)"
+                />
+                <source type="image/webp" srcset="./img/watch.webp" />
+                <img
+                  class="service__pic-img"
+                  src="./img/watch.png"
+                  alt="watch"
+                  loading="lazy"
+                />
+              </picture>
+              <section class="service__wrap">
+                <h4 class="service__name">Подбор “Сейчас”</h4>
+                <p class="service__text service__text_fz">
+                  Подбор с возможностью начала сессии “здесь и сейчас”
+                </p>
+              </section>
+            </article>
+          </footer>
+        </section>
+        <section class="order">
+          <h2 class="order__title">Как это устроено</h2>
+          <div class="order__points">
+            <div class="order__point">1</div>
+            <div class="order__point order__point_clr">2</div>
+            <div class="order__point">3</div>
+            <div class="order__point">4</div>
+          </div>
+          <section class="order__content">
+            <h3 class="visually-hidden">content</h3>
+            <section class="order__left">
+              <h4 class="visually-hidden">cards</h4>
+              <article class="order__card">
+                <h5 class="order__ttl">Заполните простую анкету</h5>
+                <p class="order__text">
+                  Расскажите, что вас беспокоит и что важно в психологе.
+                </p>
+              </article>
+              <article class="order__card">
+                <h5 class="order__ttl order__ttl_third">
+                  Выберите способ связи с психологом
+                </h5>
+                <p class="order__text">
+                  49руб/мин по
+                  <span class="order__light">аудио/видео связи</span><br />
+                  200руб за 24 часа
+                  <span class="order__light">чата + аудио сообщения</span>
+                </p>
+              </article>
+            </section>
+            <section class="order__center">
+              <picture class="order__pic">
+                <source type="image/avif" srcset="./img/Mobile.avif" />
+                <source type="image/webp" srcset="./img/Mobile.webp" />
+                <img
+                  class="order__pic-img"
+                  src="./img/Mobile.png"
+                  alt="Mobile"
+                  loading="lazy"
+                />
+              </picture>
+            </section>
+            <section class="order__right">
+              <article class="order__card">
+                <h5 class="order__ttl order__ttl_second">Выберите психолога</h5>
+                <p class="order__text">Выберите понравившегося психолога</p>
+              </article>
+              <article class="order__card">
+                <h5 class="order__ttl order__ttl_fourth">Начните общение</h5>
+                <p class="order__text">
+                  Все общение происходит через платформу SPEAK. Вслучае если
+                  психолог вам не понравится, вы можете заменить его без
+                  дополнительных переплат
+                </p>
+              </article>
+            </section>
+          </section>
+          <section class="order__info">
+            <h3 class="order__info-ttl">Заполните простую анкету</h3>
+            <h3 class="order__info-ttl2">Выберите психолога</h3>
+            <p class="order__info-text">
+              Расскажите, что вас беспокоит и что важно в психологе.
+            </p>
+            <p class="order__info-text2">Выберите понравившегося психолога</p>
+          </section>
+          <button class="btnsecondary order_btnsecondary">
+            Начать общение
+          </button>
+        </section>
+        <section class="offers">
+          <h2 class="offers__title">Услуги</h2>
+          <article class="offers__left">
+            <h3 class="offers__ttl">24 часа чата</h3>
+            <p class="offers__num">
+              4200₽ <span class="offers__nums">/ 24 часа</span>
+            </p>
+            <ul class="offers__list">
+              <li class="offers__items">
+                <div class="offers__wrap">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="11"
+                    fill="none"
+                  >
+                    <path
+                      stroke="#00B9B6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.333 3.417 3.89 8 1.667 5.71"
+                    />
+                  </svg>
+                </div>
+                <p class="offers__text">24 часа доступа к чату с психологом</p>
+              </li>
+              <li class="offers__items">
+                <div class="offers__wrap">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="11"
+                    fill="none"
+                  >
+                    <path
+                      stroke="#00B9B6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.333 3.417 3.89 8 1.667 5.71"
+                    />
+                  </svg>
+                </div>
+                <p class="offers__text">Аудио сообщения</p>
+              </li>
+            </ul>
+            <button class="btnsecondary btnsecondary_brdr">Перейти</button>
+          </article>
+          <article class="offers__right">
+            <h3 class="offers__ttl offers__ttl_clr">Аудио/Видео сессии</h3>
+            <p class="offers__num offers__num_clr">
+              49₽ <span class="offers__nums offers__nums_clr">/ 1 минута</span>
+            </p>
+            <ul class="offers__list">
+              <li class="offers__items">
+                <div class="offers__wrap offers__wrap_clr">
+                  <svg width="10" height="11" fill="none">
+                    <path
+                      stroke="#fff"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.333 3.417 3.89 8 1.667 5.71"
+                    />
+                  </svg>
+                </div>
+                <p class="offers__text offers__text_clr">
+                  Безлимитный доступа к чату с психологом до начала сессии
+                </p>
+              </li>
+              <li class="offers__items">
+                <div class="offers__wrap offers__wrap_clr">
+                  <svg width="10" height="11" fill="none">
+                    <path
+                      stroke="#fff"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.333 3.417 3.89 8 1.667 5.71"
+                    />
+                  </svg>
+                </div>
+                <p class="offers__text offers__text_clr">Аудио/Видео звонки</p>
+              </li>
+              <li class="offers__items">
+                <div class="offers__wrap offers__wrap_clr">
+                  <svg width="10" height="11" fill="none">
+                    <path
+                      stroke="#fff"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.333 3.417 3.89 8 1.667 5.71"
+                    />
+                  </svg>
+                </div>
+                <p class="offers__text offers__text_clr">
+                  Нет лимитов по времени разговора
+                </p>
+              </li>
+            </ul>
+            <form class="form">
+              <label class="form__label">
+                <input
+                  class="form__input"
+                  type="number"
+                  value="20"
+                  name="time"
+                /> </label
+              ><label class="form__label form__label_second">
+                <input
+                  class="form__input form__input_second"
+                  type="number"
+                  value="40"
+                  name="price"
+                />
+              </label>
+              <button type="submit" class="btnsecondary btnsecondary_brdr">
+                Перейти
+              </button>
+            </form>
+            <section class="offers__popular">
+              <h4 class="offers__pplr">Популярное</h4>
+              <svg class="offers__svg" viewBox="0 0 18 18" fill="none">
+                <path
+                  fill="#fff"
+                  d="M16.479 7.196a.446.446 0 0 0-.355-.314l-4.65-.708-2.08-4.417A.438.438 0 0 0 9 1.5c-.167 0-.32.1-.394.257l-2.08 4.417-4.65.708a.446.446 0 0 0-.354.314.476.476 0 0 0 .11.472l3.365 3.438-.794 4.855a.471.471 0 0 0 .175.451.426.426 0 0 0 .463.035L9 14.155l4.159 2.292a.423.423 0 0 0 .463-.035.472.472 0 0 0 .175-.45l-.795-4.856 3.365-3.438a.476.476 0 0 0 .111-.472Z"
+                />
+              </svg>
+            </section>
+          </article>
+        </section>
+        <section class="mobile">
+          <h2 class="visually-hidden">mobile</h2>
+          <article class="free mobile__free">
+            <h3 class="free__title mobile__title">
+              Скачайте бесплатно приложение SPEAK
+            </h3>
+            <section class="free__content">
+              <h4 class="visually-hidden">content</h4>
+              <div class="free__wrap">
+                <svg class="free__svg" viewBox="0 0 64 64" fill="none">
+                  <rect
+                    x="0.818558"
+                    y="0.663574"
+                    width="62.363"
+                    height="62.6733"
+                    rx="12"
+                    fill="url(#pattern0_1985_324)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_1985_324"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_1985_324"
+                        transform="scale(0.00497512 0.0049505)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_1985_324"
+                      width="201"
+                      height="202"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMkAAADKCAMAAAA4jJSZAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAADNQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAowVGyQAAABF0Uk5TABBAMCCAkMD/UPDgsNCgYHCCRj/5AAAGa0lEQVR4nO2d6ZqcKhRFW5wQLfX9n/ZW3yQ9WMiZNmgn7L/JV7oaOMCZfHurqqqqqqqqqqqqqqr6+9U41179DjZ1rh/G0b9rvPpd1Gqmfgz+UzGS1s9L74q/mkTt8PAHxUjc73+6K820hiNGmuSpsE7F35NQN8wRDJLkdjDTGMfgkDw1913xV45qOxkONslTyw2WTJKDTfL8jxezuPN5JSS5lqUZCA4RyfM/X3UimGJm10Li/dAUp3gOyEpziEl8KG+T2/RK15I8zVjhYdkYM0tH4kPRlU8vdT2J930xjmbhguhI/FhohjUvJ140iX8UsccSEC2JDwVQRCBqEh+27CQiED2J97lRWPshhCQzSi8DMZH4nBsL+yUgJBmXfcPc2UEkPmS7TPJ3RAyJf2TaIicxiJXEr1lA5HPLTuL3HCRSuwUh8RlWfacAAZBkWCrCPRFF4gc0SKMBQZDAN0jNKolfmqQkDzAJ797+RfPY91NsaxMfFLAHMNle8him84XaSa35DCURrPd5Jw4ZpOfyKOigsP+OLGd114smKzLG13KfyT7zJUIVrwKeJHfWA2eRwRRMMuD0Yp2CxV5dx51jwN2RsUxULl3mLoVbKIwNXnnB4/mXcSSMzUzrZGd5nXAkG/ks/ZWIE77AkdDT2WInaZSCJKZbKj3BcLaLjDLYQlHkvRoX6SL3MOPvU+dT3L2RIjGfVtM7L9DDogm7i5Q+6QNvjdlJkjZlARD8EbXig/kJCfsF9amSVti+JNvT+QW9Z5EkADN5Zr+wt3jytIKwLvHsEXA8iD5BIuZy+7pW4NkftCcVY/L7w7CseFcqSQLyRDf757jMQ45AEH3lnlF/vsb174o6/QBi3CFyxZ/Aoq9aT5SbpJimxfJ3hSwBKLR4Psg5f46GWVy/cFgTvu1bSOKrn9ftxktGGtIK9y3M0IQZH8N2w6IgRVrBL423wxGH577hrPt9Jhsv8JDSvGQ7g4ikSfaIKIzX4+ji2Kc4F247oEH50IXbDucYKaa5ZmxkealcjVTUO4O4EWCxHsVhgIv+FabsNJNmN4i0ltw80fbroEfB+8250xOjgne1DKb4wFKsVCs7iiD55fYoxeqbCqCU8ji5zMvelytsjHjV4SrkPONVmNqUJ6f+VZyq3x+CIqhqvDsKP2Xu/ihve+4pVrBw9hhPQ6uky5zoJGFUiWLTT7lo0xiQYFE/npptyQaDzFrhaXrtSoTRFU1ymiw04Sofn9tXMA68vuk6nKv9yO84GF9Mua0+pXYbRrNdu3xQPtQdmsb9zEH5UOP6RXkeQJuvzjlzX0QlDvL49dnHbtmsf6FuW4U0uJrG/duTQ28f7W4X3dRAa/613AXi+mg2/p6DmV5R/xbGnHQD06RBzpEnjjqQZWTe1ey51QmPI8rI81wb9htXIiIH861x3LP2hZJYlLiEdwaK2TeRfAbuEEG3NjMv+fQOBhuUhtwprYUhRNwa54Um55fVeBGjDqzBJ22x8fepmxLuZEc6/42/T/08blDI6WXcUKifxw0KWRhiSzugqzVgd6DMJIxqDZSL8HoS1Pwi14mRhNOrAONNJ22XcRfmHFMhS4VO7TE+gJVai6ihoTPHjA/gNe2yo9DZfOadi3fTnq2+I9rVYi4tZmZu2zwUnJQLs8OeXa1heBIrgmw/drPTOrQ9gTuePz/rPf4oVY92Zhgc4VsRhEDkvkl2CBxxKBKlOwfRdzMEoXzI7VSYALUwzRjb/fi/IB4DcV+6sJBFDG1v7x2tkCYHfV57d4Yj7nOHu9Cpw7iP2EwTjzHwPqevcUD06PTI5Ch1jQOGBBlm1M4vDAkyX00xt3Ek2MivssQ0tjWLScCZw+wPhXwTopct/Ct8qhQUAAm+1bvs0xQ4kgw5nZrKJjtJlpQVRWWTmSRT7xM5ipUkWxMXMYqRJGO2sBTFRpI17Zn5RTAISeb8bZkxtpBkb3QkKgcykJT4qJago4SepEySML+ERktS7JuA7MomJUmxKtM3dsGZiqRw9yzewteQlByQ32/EsMdyknKl2F9Fe0OlJIisV50oT7uQ5JIvsv5RelwkJCFL/0eJtsS9mE8yXzavvurc7c4lGe/T6i/++XgeSfm+MYSmSNo/TXI7jF/q9kNJRpok+Tmh6/Ve/zNTJOFW7eKScq7vlzG6kBv3Qxiqqqqqqqqqqqqqqqr+df0Hp6SOdaVR8REAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+              </div>
+              <section class="free__wrapper">
+                <h5 class="free__sub">Speak</h5>
+                <p class="free__text">онлайн сессии с психологом</p>
+                <p class="free__text">доступно для iOS и Android</p>
+              </section>
+            </section>
+            <footer class="free__foot">
+              <a class="free__link" href=""
+                ><picture class="free__pic">
+                  <source type="image/avif" srcset="./img/appsotrefff.avif" />
+                  <source type="image/webp" srcset="./img/appsotrefff.webp" />
+                  <img
+                    class="free__pic-img"
+                    src="./img/appsotrefff.png"
+                    alt="appstore"
+                    loading="lazy"
+                  /> </picture></a
+              ><a class="free__link" href=""
+                ><picture class="free__pic">
+                  <source type="image/avif" srcset="./img/playstore.avif" />
+                  <source type="image/webp" srcset="./img/playstore.webp" />
+                  <img
+                    class="free__pic-img"
+                    src="./img/playstore.png"
+                    alt="playstore"
+                    loading="lazy"
+                  /> </picture
+              ></a>
+            </footer>
+          </article>
+          <article class="mobile__wrap">
+            <picture class="mobile__pic">
+              <source type="image/avif" srcset="./img/phone_p.avif" />
+              <source type="image/webp" srcset="./img/phone_p.webp" />
+              <img
+                class="mobile__pic-img"
+                src="./img/phone_p.png"
+                alt="phone"
+                loading="lazy"
+              />
+            </picture>
+          </article>
+        </section>
+        <section class="reviews">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__wrapp">
+            <section class="reviews__cards">
+              <h3 class="visually-hidden">cards</h3>
+              <article class="reviews__card">
+                <h4 class="visually-hidden">card</h4>
+                <picture class="reviews__pic">
+                  <source type="image/avif" srcset="./img/photo2.avif" />
+                  <source type="image/webp" srcset="./img/photo2.webp" />
+                  <img
+                    class="reviews__pic-img"
+                    src="./img/photo2.png"
+                    alt="man"
+                    loading="lazy"
+                  />
+                </picture>
+                <section class="reviews__right">
+                  <h5 class="visually-hidden">text</h5>
+                  <header class="reviews__head">
+                    <section class="reviews__wrap">
+                      <h6 class="reviews__name">Sophia Jones</h6>
+                      <p class="reviews__sub">Teacher</p>
+                    </section>
+                    <div class="reviews__wraps">
+                      <svg width="90" height="14" fill="none">
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                  </header>
+                </section>
+                <p class="reviews__text">
+                  After just 2 months, Speak has already made such an impact on
+                  my life. It has helped me develop manageable solutions to
+                  feelings of stress, anxiety, and overwhelm. Speaker helped me
+                  navigate the difficult stages of grief after losing my mom,
+                  with compassion and encouragement. And she’s easy to open up
+                  to, making me feel heard and understood.
+                </p>
+              </article>
+              <article class="reviews__card reviews__card_none">
+                <h4 class="visually-hidden">card</h4>
+                <picture class="reviews__pic">
+                  <source type="image/avif" srcset="./img/photo1.avif" />
+                  <source type="image/webp" srcset="./img/photo1.webp" />
+                  <img
+                    class="reviews__pic-img"
+                    src="./img/photo1.png"
+                    alt="man"
+                    loading="lazy"
+                  />
+                </picture>
+                <section class="reviews__right">
+                  <h5 class="visually-hidden">text</h5>
+                  <header class="reviews__head">
+                    <section class="reviews__wrap">
+                      <h6 class="reviews__name">Jay K. Braun</h6>
+                      <p class="reviews__sub">Artist</p>
+                    </section>
+                    <div class="reviews__wraps">
+                      <svg width="90" height="14" fill="none">
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                  </header>
+                </section>
+                <p class="reviews__text">
+                  After just 2 months, Speak has already made such an impact on
+                  my life. It has helped me develop manageable solutions to
+                  feelings of stress, anxiety, and overwhelm. Speaker helped me
+                  navigate the difficult stages of grief after losing my mom,
+                  with compassion and
+                </p>
+              </article>
+              <article class="reviews__card">
+                <h4 class="visually-hidden">card</h4>
+                <picture class="reviews__pic">
+                  <source type="image/avif" srcset="./img/img1.avif" />
+                  <source type="image/webp" srcset="./img/img1.webp" />
+                  <img
+                    class="reviews__pic-img"
+                    src="./img/img1.png"
+                    alt="girl"
+                    loading="lazy"
+                  />
+                </picture>
+                <section class="reviews__right">
+                  <h5 class="visually-hidden">text</h5>
+                  <header class="reviews__head">
+                    <section class="reviews__wrap">
+                      <h6 class="reviews__name">Sophia Jones</h6>
+                      <p class="reviews__sub">Teacher</p>
+                    </section>
+                    <div class="reviews__wraps">
+                      <svg width="90" height="14" fill="none">
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                  </header>
+                </section>
+                <p class="reviews__text">
+                  After just 2 months, Speak has already made such an impact on
+                  my life. It has helped me develop manageable solutions to
+                  feelings of stress, anxiety, and overwhelm. Speaker helped me
+                  navigate the difficult stages of grief after losing my mom,
+                  with compassion and encouragement. And she’s easy to open up
+                  to, making me feel heard and understood.
+                </p>
+              </article>
+              <article class="reviews__card reviews__card_none">
+                <h4 class="visually-hidden">card</h4>
+                <picture class="reviews__pic">
+                  <source type="image/avif" srcset="./img/img2.avif" />
+                  <source type="image/webp" srcset="./img/img2.webp" />
+                  <img
+                    class="reviews__pic-img"
+                    src="./img/img2.png"
+                    alt="man"
+                    loading="lazy"
+                  />
+                </picture>
+                <section class="reviews__right">
+                  <h5 class="visually-hidden">text</h5>
+                  <header class="reviews__head">
+                    <section class="reviews__wrap">
+                      <h6 class="reviews__name">Jay K. Braun</h6>
+                      <p class="reviews__sub">Artist</p>
+                    </section>
+                    <div class="reviews__wraps">
+                      <svg width="90" height="14" fill="none">
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                  </header>
+                </section>
+                <p class="reviews__text">
+                  After just 2 months, Speak has already made such an impact on
+                  my life. It has helped me develop manageable solutions to
+                  feelings of stress, anxiety, and overwhelm. Speaker helped me
+                  navigate the difficult stages of grief after losing my mom,
+                  with compassion and
+                </p>
+              </article>
+              <article class="reviews__card reviews__card_op">
+                <h4 class="visually-hidden">card</h4>
+                <picture class="reviews__pic">
+                  <source type="image/avif" srcset="./img/photo4.avif" />
+                  <source type="image/webp" srcset="./img/photo4.webp" />
+                  <img
+                    class="reviews__pic-img"
+                    src="./img/photo4.png"
+                    alt="man"
+                    loading="lazy"
+                  />
+                </picture>
+                <section class="reviews__right">
+                  <h5 class="visually-hidden">text</h5>
+                  <header class="reviews__head">
+                    <section class="reviews__wrap">
+                      <h6 class="reviews__name">Sophia Jones</h6>
+                      <p class="reviews__sub">Teacher</p>
+                    </section>
+                    <div class="reviews__wraps">
+                      <svg width="90" height="14" fill="none">
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                  </header>
+                </section>
+                <p class="reviews__text">
+                  After just 2 months, Speak has already made such an impact on
+                  my life. It has helped me develop manageable solutions to
+                  feelings of stress, anxiety, and overwhelm. Speaker helped me
+                  navigate the difficult stages of grief after losing my mom,
+                  with compassion and encouragement. And she’s easy to open up
+                  to, making me feel heard and understood.
+                </p>
+              </article>
+              <article class="reviews__card">
+                <h4 class="visually-hidden">card</h4>
+                <picture class="reviews__pic">
+                  <source type="image/avif" srcset="./img/photo3.avif" />
+                  <source type="image/webp" srcset="./img/photo3.webp" />
+                  <img
+                    class="reviews__pic-img"
+                    src="./img/photo3.png"
+                    alt="man"
+                    loading="lazy"
+                  />
+                </picture>
+                <section class="reviews__right">
+                  <h5 class="visually-hidden">text</h5>
+                  <header class="reviews__head">
+                    <section class="reviews__wrap">
+                      <h6 class="reviews__name">Jay K. Braun</h6>
+                      <p class="reviews__sub">Artist</p>
+                    </section>
+                    <div class="reviews__wraps">
+                      <svg width="90" height="14" fill="none">
+                        <path
+                          fill="#FFA800"
+                          d="M12.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2L5.076 4.802l-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L7 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM31.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L26 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM50.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.617-3.436a.34.34 0 0 0-.307-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L45 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM69.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L64 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367ZM88.817 5.597a.346.346 0 0 0-.276-.244l-3.617-.551-1.618-3.436a.34.34 0 0 0-.306-.2.34.34 0 0 0-.306.2l-1.618 3.436-3.617.55a.347.347 0 0 0-.276.245.37.37 0 0 0 .087.367l2.617 2.674-.618 3.776c-.022.135.03.27.136.35a.331.331 0 0 0 .36.028L83 11.009l3.235 1.783a.328.328 0 0 0 .36-.027.367.367 0 0 0 .136-.35l-.618-3.777 2.617-2.674a.37.37 0 0 0 .087-.367Z"
+                        />
+                      </svg>
+                    </div>
+                  </header>
+                </section>
+                <p class="reviews__text">
+                  After just 2 months, Speak has already made such an impact on
+                  my life. It has helped me develop manageable solutions to
+                  feelings of stress, anxiety, and overwhelm. Speaker helped me
+                  navigate the difficult stages of grief after losing my mom,
+                  with compassion and
+                </p>
+              </article>
+            </section>
+          </div>
+          <div class="dots">
+            <div class="dots__item1"></div>
+            <div class="dots__item1"></div>
+            <div class="dots__item1 dots__item1_active"></div>
+            <div class="dots__item1"></div>
+            <div class="dots__item1"></div>
+          </div>
+        </section>
+        <section class="text">
+          <h2 class="text__title">Детский психолог онлайн</h2>
+          <section class="text__content">
+            <article class="text__block">
+              <h3 class="text__ttl">Чем поможет детский психолог онлайн?</h3>
+              <p class="text__text">
+                Каждый родитель хочет, чтобы его ребенок рос сильной
+                уравновешенной личностью. Мы понимаем, что именно в детстве
+                формируются зачатки характера. Как справиться с возникающими
+                проблемами, как выстроить отношения с ребенком, чтобы он доверял
+                вам? На эти и другие вопросы поможет ответить детский психолог
+                онлайн.
+              </p>
+            </article>
+            <article class="text__block">
+              <h3 class="text__ttl">
+                Преимущества онлайн-консультации детского психолога
+              </h3>
+              <p class="text__text">
+                Главный плюс сеанса в таком формате – экономия времени. Вам не
+                придется тратить время на дорогу и долгие сборы. Все, что нужно
+                – компьютер или смартфон, микрофон и блокнот с ручкой, чтобы
+                записывать важную информацию. Если вам или ребенку тяжело
+                общаться с незнакомым человеком лично, онлайн-связь в этом
+                случае упростит дело.
+              </p>
+            </article>
+            <article class="text__block">
+              <h3 class="text__ttl">
+                Когда нужна помощь детского психолога онлайн?
+              </h3>
+              <p class="text__text">
+                Онлайн-консультация детского психолога может быть полезна, если
+                у вас есть вопросы по таким темам, как:
+              </p>
+              <ul class="text__list">
+                <li class="text__item">Плохая успеваемость;</li>
+                <li class="text__item">Стеснительность;</li>
+                <li class="text__item">Цифровая зависимость;</li>
+                <li class="text__item">Агрессия;</li>
+                <li class="text__item">Потеря близкого в семье;</li>
+                <li class="text__item">Возрастной кризис;</li>
+                <li class="text__item">
+                  Подготовка к детскому саду или школе;
+                </li>
+                <li class="text__text">Профориентация.</li>
+              </ul>
+              <p class="text__text text__text_gg">
+                Это лишь часть тем, которые можно затронуть. Помните, что, если
+                возникает ситуация, в которой вы самостоятельно не можете
+                разобраться, сейчас консультация детского психолога онлайн
+                поможет найти ответы.
+              </p>
+            </article>
+            <article class="text__block">
+              <h3 class="text__ttl text__ttl_gg text__break">
+                Как проходит онлайн-консультация детского психолога?
+              </h3>
+              <p class="text__text">
+                Задать вопрос детскому психологу онлайн может как сам ребенок,
+                так и родитель.
+                <span class="text__span"
+                  >На первом сеансе обычно присутствует родитель или опекун, а
+                  также сам «виновник торжества». Следующие сеансы могут быть и
+                  без взрослого, если ребенок сам в состоянии связаться через
+                  интернет.</span
+                >
+              </p>
+              <p class="text__text">
+                Бывает и так, что сначала ребенку присутствовать необязательно.
+                В этом случае работа происходит с родителем, а если есть
+                необходимость, позже присоединяется ребенок.
+              </p>
+              <p class="text__text">
+                Психолог по детским вопросам онлайн может попросить ребенка
+                нарисовать что-то, далее по этим рисункам он проведет
+                диагностику. Родитель тоже является звеном связи с психикой
+                ребенка. Через него психолог может сделать вывод о том, какая
+                проблема сейчас назрела.
+              </p>
+              <p class="text__text">
+                Если специалист попросит вас пройти обследование или сдать
+                анализы для более ясной картины, не пугайтесь, это нормально.
+                Таким образом, вы оба сможете исключить какие-либо диагнозы
+              </p>
+            </article>
+            <article class="text__block">
+              <h3 class="text__ttl">О чем поговорить с детским психологом?</h3>
+              <p class="text__text">
+                Родители малышей часто обращаются с вопросами об адаптации в
+                детском саду. Есть тревожные мамы, которые сомневаются, стоит ли
+                отдавать малыша в сад или же пока слишком рано. Очень многих
+                волнует, что воспитатель будет срываться на ребенка. Это
+                логично, ведь в силу того, что в СМИ регулярно появляются жуткие
+                новости о чудовищных ЧП в детсадах, беспокойство обосновано.
+              </p>
+              <p class="text__text">
+                Отдельный вопрос подготовки к саду. В интернете полно информации
+                в таком ключе: «ребенок должен научиться самостоятельно есть,
+                ходить в туалет и засыпать сам перед тем, как идти в сад». Особо
+                мнительные беспрекословно верят, другие понимают: ребенок ничего
+                никому не должен. Его невозможно научить чему-то, пока он сам не
+                захочет делать это. «Дрессировке» малыши не поддаются. Но
+                пугаться не стоит, в любом случае, воспитатели будут помогать
+                малышам в этих вопросах. Главное – настроиться на позитив и
+                верить в хорошее.
+              </p>
+              <p class="text__text">
+                Дети постарше сталкиваются с проблемами переходного возраста,
+                неуверенностью в себе, безответной любовью и другими. Если вы
+                понимаете, что вам с чадом необходима онлайн-консультация, вы
+                можете выбрать специалиста на нашем сайте.
+              </p>
+            </article>
+          </section>
+        </section>
+      </main>
+      <footer class="footer">
+        <section class="footer__left">
+          <div class="logo">
+            <a class="logo__link" href="#"
+              ><picture class="logo__pic logo__pic_size">
+                <source type="image/avif" srcset="./img/logo.avif" />
+                <source type="image/webp" srcset="./img/logo.webp" />
+                <img
+                  class="logo__pic-img"
+                  src="./img/logo.png"
+                  alt="logo"
+                /> </picture
+            ></a>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="">Home</a
+                ><a class="footer__link" href="">About us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Blog</a>
+                <a class="footer__link" href="">Contact</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Privacy Policy</a>
+                <a class="footer__link" href="">Terms and Conditions</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <section class="footer__right">
+          <header class="footer__head">
+            <a class="footer__link">
+              <svg class="footer__svg" viewBox="0 0 40 40" fill="none">
+                <g clip-path="url(#a)">
+                  <path
+                    fill="#365089"
+                    d="M34.14 0H5.86A5.866 5.866 0 0 0 0 5.86v28.28C0 37.372 2.629 40 5.86 40h11.796V25.86H12.97v-7.032h4.687v-4.765a7.039 7.039 0 0 1 7.032-7.032h7.109v7.032h-7.11v4.765h7.11l-1.172 7.031h-5.938V40h9.454C37.37 40 40 37.371 40 34.14V5.86C40 2.628 37.371 0 34.14 0Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h40v40H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a class="footer__link">
+              <svg class="footer__svg" viewBox="0 0 40 40" fill="none">
+                <g clip-path="url(#a)">
+                  <path
+                    fill="url(#b)"
+                    d="M2.5 2.722C-.643 5.987 0 9.455 0 19.992c0 8.75-1.527 17.521 6.463 19.586 2.495.642 24.602.642 27.093-.003 3.327-.858 6.034-3.557 6.404-8.262.051-.656.051-21.975-.002-22.645-.393-5.011-3.478-7.9-7.543-8.485C31.483.048 31.297.008 26.517 0 9.562.008 5.845-.747 2.5 2.722Z"
+                  />
+                  <path
+                    fill="#fff"
+                    d="M19.997 5.232c-6.052 0-11.799-.539-13.994 5.094-.906 2.327-.775 5.349-.775 9.675 0 3.797-.121 7.365.775 9.674 2.19 5.637 7.984 5.097 13.99 5.097 5.795 0 11.77.603 13.992-5.097.908-2.35.775-5.327.775-9.674 0-5.77.318-9.495-2.48-12.291-2.833-2.833-6.665-2.478-12.29-2.478h.007Zm-1.324 2.661c12.624-.02 14.23-1.423 13.344 18.072-.315 6.895-5.565 6.138-12.019 6.138-11.766 0-12.105-.337-12.105-12.108 0-11.908.934-12.095 10.78-12.105v.003Zm9.207 2.452a1.772 1.772 0 1 0 0 3.544 1.772 1.772 0 0 0 0-3.544Zm-7.883 2.071a7.585 7.585 0 0 0 0 15.169A7.582 7.582 0 0 0 27.578 20a7.583 7.583 0 0 0-7.581-7.585Zm0 2.662c6.508 0 6.516 9.847 0 9.847-6.507 0-6.517-9.847 0-9.847Z"
+                  />
+                </g>
+                <defs>
+                  <linearGradient
+                    id="b"
+                    x1="2.577"
+                    x2="39.752"
+                    y1="37.445"
+                    y2="5.27"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FD5" />
+                    <stop offset=".5" stop-color="#FF543E" />
+                    <stop offset="1" stop-color="#C837AB" />
+                  </linearGradient>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h40v40H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a class="footer__link">
+              <svg class="footer__svg" viewBox="0 0 40 40" fill="none">
+                <g clip-path="url(#a)">
+                  <path
+                    fill="#0172B4"
+                    d="M34.14 0H5.86A5.866 5.866 0 0 0 0 5.86v28.28C0 37.372 2.629 40 5.86 40h28.28c3.231 0 5.86-2.629 5.86-5.86V5.86C40 2.628 37.371 0 34.14 0Zm-20 31.719H9.454V15.312h4.688V31.72Zm0-18.75H9.454V8.28h4.688v4.688Zm16.407 18.75h-4.688v-9.375A2.347 2.347 0 0 0 23.516 20a2.347 2.347 0 0 0-2.344 2.344v9.375h-4.688V15.312h4.688v.884c1.228-.382 2.026-.884 3.515-.884 3.18.004 5.86 2.856 5.86 6.226v10.18Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h40v40H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a class="footer__link">
+              <svg class="footer__svg" viewBox="0 0 40 40" fill="none">
+                <path
+                  fill="#1EA5DD"
+                  d="M29.945 0H10.024C4.504 0 0 4.508 0 10.032V30c0 5.492 4.504 10 10.024 10h19.952C35.496 40 40 35.492 40 29.968V10.032C39.968 4.508 35.464 0 29.945 0Zm-.032 14.984v.667c0 6.666-5.139 14.349-14.56 14.349-2.887 0-5.583-.825-7.835-2.254.412.032.793.064 1.205.064 2.411 0 4.6-.794 6.344-2.16a5.111 5.111 0 0 1-4.79-3.491c.318.063.635.095.952.095.476 0 .952-.064 1.364-.19-2.284-.477-4.028-2.508-4.028-4.953v-.063c.634.38 1.459.603 2.284.635a5.022 5.022 0 0 1-2.284-4.19c0-.922.253-1.779.697-2.54a14.65 14.65 0 0 0 10.532 5.27 4.68 4.68 0 0 1-.127-1.144c0-2.793 2.284-5.047 5.107-5.047 1.46 0 2.791.603 3.743 1.587a9.52 9.52 0 0 0 3.236-1.238c-.381 1.175-1.206 2.159-2.253 2.794 1.047-.127 2.03-.381 2.95-.794a10.42 10.42 0 0 1-2.537 2.603Z"
+                />
+              </svg>
+            </a>
+          </header>
+          <footer class="footer__foot">
+            <a class="footer__links" href="mailto:info@speak.help"
+              ><svg
+                class="footer__icon"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+              >
+                <path
+                  fill="#00B9B6"
+                  d="M22 18.222V7.556s-9.1 7.526-9.985 7.916C11.145 15.099 2 7.556 2 7.556v10.666C2 19.704 2.265 20 3.5 20h17c1.265 0 1.5-.26 1.5-1.778Zm-.015-12.758C21.985 4.385 21.72 4 20.5 4h-17C2.245 4 2 4.462 2 5.54l.015.167s9.034 7.372 10 7.775C13.035 13.013 22 5.54 22 5.54l-.015-.077Z"
+                />
+              </svg>
+              <p class="footer__wraps">info@speak.help</p></a
+            >
+            <address class="footer__adress">
+              <a
+                class="footer__links"
+                href="https://www.google.com/maps?q=33+W+60th+Street,+8th+FI+New+York,+NY+10023"
+                target="_blank"
+              >
+                <svg class="footer__icon" viewBox="0 0 24 24" fill="none">
+                  <path
+                    fill="#00B9B6"
+                    d="M12 2C8.133 2 5 4.788 5 8.241 5 14.213 12 22 12 22s7-7.789 7-13.759C19 4.79 15.867 2 12 2Zm0 9.695c-1.002 0-1.964-.356-2.673-.99-.709-.633-1.107-1.492-1.107-2.387 0-.896.398-1.755 1.107-2.388.709-.634 1.67-.99 2.673-.99 1.002 0 1.964.356 2.673.99.709.633 1.107 1.492 1.107 2.388 0 .895-.398 1.754-1.107 2.388-.709.633-1.67.989-2.673.989Z"
+                  />
+                </svg>
+                <p class="footer__wraps">
+                  33 W 60th Street, 8th FI New York, NY 10023
+                </p>
+              </a>
+            </address>
+          </footer>
+        </section>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

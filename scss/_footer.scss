@@ -1,0 +1,88 @@
+.footer {
+  padding: 70px 0;
+  display: flex;
+  gap: 175px;
+  @media (max-width: 1224px) {
+    padding: 0 40px;
+    gap: 84px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 40px;
+  }
+  @media (max-width: 360px) {
+    padding: 0 20px;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+    @media (max-width: 460px) {
+      gap: 25px 30px;
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &__link {
+    white-space: nowrap;
+    font-family: $font-family-med;
+    font-size: $font-size-18;
+    color: $color-black;
+    transition: 0.3s;
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  &__head {
+    display: flex;
+    gap: 20px;
+  }
+  &__foot {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media (max-width: 360px) {
+      align-items: start;
+    }
+  }
+  &__wraps {
+    color: $color-black;
+    font-family: $font-family-med;
+    font-size: $font-size-18;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    font-style: normal;
+  }
+  &__svg {
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+  &__icon {
+    min-width: 24px;
+    height: 24px;
+  }
+}

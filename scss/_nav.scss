@@ -1,0 +1,34 @@
+.nav {
+  &__list {
+    display: flex;
+    gap: 40px;
+    @media (max-width: 980px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__link {
+    font-family: $font-family-med;
+    font-size: $font-size-18;
+    color: $color-black;
+  }
+  &__item {
+    transition: 0.3s;
+  }
+  &__item:hover {
+    transform: translateY(-4px);
+  }
+  @media (max-width: 980px) {
+    display: none;
+  }
+  &:has(~ .header__btns .header__check:checked) {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(210, 250, 250);
+    top: 0;
+    left: 0;
+    padding: 30px;
+    width: 100%;
+  }
+}

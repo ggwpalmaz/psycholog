@@ -1,0 +1,122 @@
+.free {
+  &__title {
+    color: $color;
+    font-family: $font-family-bold;
+    font-size: $font-size-32;
+    letter-spacing: 0%;
+    text-align: left;
+    @media (max-width: 960px) {
+      font-size: $font-size-28;
+    }
+    @media (max-width: 361px) {
+      font-size: $font-size-24;
+      text-align: center;
+    }
+  }
+  &__content {
+    margin: clamp(1.75rem, 1.1066rem + 1.0054vw, 2.313rem) 0
+      clamp(3.125rem, 1.5536rem + 2.4554vw, 4.5rem);
+    display: flex;
+    height: 90px;
+    gap: 20px;
+    @media (max-width: 1024px) {
+      margin: 28px 0 50px;
+    }
+    @media (max-width: 900px) {
+      margin: 28px 0 36px;
+    }
+    @media (max-width: 369px) {
+      gap: 15px;
+      margin: 28px 0 26px;
+    }
+  }
+  &__wrap {
+    border-radius: 12px;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+    background: $color-white;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 900px) {
+      width: 80px;
+      height: 80px;
+    }
+    @media (max-width: 369px) {
+      width: 75px;
+      height: 75px;
+    }
+  }
+  &__svg {
+    width: 64px;
+    @media (max-width: 369px) {
+      width: 55px;
+      height: 55px;
+    }
+  }
+  &__wrapper {
+    padding: 3px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 1024px) {
+      height: 82px;
+    }
+    @media (max-width: 769px) {
+      height: 85px;
+    }
+    @media (max-width: 369px) {
+      height: 75px;
+    }
+  }
+  &__sub {
+    color: $color-light;
+    font-family: $font-family-semi;
+    font-size: $font-size-24;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    @media (max-width: 1024px) {
+      font-size: $font-size-20;
+    }
+    @media (max-width: 769px) {
+      font-size: $font-size-18;
+    }
+  }
+  &__text {
+    color: rgb(51, 51, 51);
+    font-family: $font-family-reg;
+    font-size: $font-size-16;
+    letter-spacing: 0%;
+    text-align: left;
+    @media (max-width: 369px) {
+      font-size: $font-size-14;
+    }
+  }
+  &__foot {
+    display: flex;
+    gap: 20px;
+    @media (max-width: 369px) {
+      justify-content: center;
+    }
+  }
+  &__link {
+    padding: 8px 12px;
+    transition: 0.3s;
+    border-radius: 8px;
+    box-shadow: 0px 15px 30px 0px rgba(220, 232, 243, 0.25);
+    background: rgb(46, 58, 89);
+  }
+  &__link:hover {
+    transform: translateY(-5px);
+  }
+  &__pic {
+    display: block;
+  }
+  &__pic-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}

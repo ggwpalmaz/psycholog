@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: top;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+ul {
+  list-style: none;
+}
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/decor.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.page {
+  max-width: 1120px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+.none {
+  display: none;
+}

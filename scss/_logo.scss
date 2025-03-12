@@ -1,0 +1,26 @@
+.logo {
+  &__pic {
+    display: block;
+    width: 183px;
+    height: 36px;
+    @media (max-width: 1024px) {
+      width: clamp(5.719rem, -11.438rem + 35.7437vw, 11.438rem);
+      height: clamp(1.125rem, -2.25rem + 7.0313vw, 2.25rem);
+    }
+    &_size {
+      @media (max-width: 1024px) {
+        width: 183px;
+        height: 36px;
+      }
+      @media (max-width: 360px) {
+        width: 152.5px;
+        height: auto;
+      }
+    }
+  }
+  &__pic-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}

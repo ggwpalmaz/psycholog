@@ -1,0 +1,145 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 158px;
+  @media (max-width: 1224px) {
+    padding: 0 40px 98px;
+  }
+  @media (max-width: 768px) {
+    padding: 0 40px 104px;
+  }
+  @media (max-width: 360px) {
+    padding: 0 20px 81px;
+  }
+  &__title {
+    color: $color;
+    font-family: $font-family-bold;
+    font-size: $font-size-36;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 50px;
+    @media (max-width: 1024px) {
+      font-size: $font-size-32;
+    }
+    @media (max-width: 768px) {
+      font-size: $font-size-28;
+    }
+    @media (max-width: 700px) {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 26px;
+    }
+  }
+  &__wrapp {
+    width: 1520px;
+    overflow: hidden;
+  }
+  &__cards {
+    position: relative;
+    left: -1140px;
+    transition: 1s;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 34px;
+    @media (max-width: 700px) {
+      margin-bottom: 40px;
+      justify-content: center;
+    }
+  }
+  &__card {
+    flex-grow: 0;
+    min-width: 550px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px 30px;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+    background: $color-white;
+    // transition: 0.3s;
+    cursor: pointer;
+    @media (max-width: 1024px) {
+      gap: 10px 20px;
+    }
+    @media (max-width: 950px) {
+      padding: 20px;
+      grid-template-columns: repeat(3, auto);
+      gap: 20px 15px;
+    }
+    @media (max-width: 700px) {
+      max-width: 320px;
+    }
+    &_none {
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+    &_op {
+      opacity: 0.5;
+    }
+  }
+  &__pic {
+    display: block;
+    width: 100px;
+    height: 100px;
+    grid-row: span 2;
+    @media (max-width: 950px) {
+      grid-row: span 1;
+      width: 70px;
+      height: auto;
+    }
+    &-img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 950px) {
+      flex-direction: column-reverse;
+      grid-column: span 2;
+      gap: 10px;
+    }
+  }
+  &__name {
+    color: $color-black;
+    font-family: $font-family-reg;
+    font-size: $font-size-16;
+    font-weight: normal;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__sub {
+    color: $color-black;
+    font-family: $font-family-bold;
+    font-size: $font-size-16;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__text {
+    color: $color-black;
+    font-family: $font-family-reg;
+    font-size: $font-size-16;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    @media (max-width: 1024px) {
+      line-height: 140%;
+    }
+    @media (max-width: 950px) {
+      grid-column: span 3;
+      font-size: $font-size-14;
+    }
+  }
+}
