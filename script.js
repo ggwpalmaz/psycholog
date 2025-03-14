@@ -26,14 +26,14 @@ peopleWraps.addEventListener("mousemove", (event) => {
 });
 
 peopleWraps.addEventListener("mouseup", (event) => {
-  console.log("cur", currentX);
-  console.log("start", startX);
+  // console.log("cur", currentX);
+  // console.log("start", startX);
   if (currentX > startX) {
     if (isDragging) {
       dotsItem.forEach((el, index) => {
         if (el.classList.contains("dots__item_active")) {
           currInd = index - 1;
-
+          console.log(currInd);
           if (index > 0) {
             el.classList.remove("dots__item_active");
             dotsItem[currInd].classList.add("dots__item_active");
