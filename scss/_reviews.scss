@@ -34,10 +34,14 @@
   &__wrapp {
     width: 1520px;
     overflow: hidden;
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
   }
   &__cards {
+    user-select: none;
     position: relative;
-    left: -1140px;
+    // left: -1140px;
     transition: 1s;
     display: flex;
     gap: 20px;
@@ -61,6 +65,7 @@
     // transition: 0.3s;
     cursor: pointer;
     @media (max-width: 1024px) {
+      min-width: 462px;
       gap: 10px 20px;
     }
     @media (max-width: 950px) {

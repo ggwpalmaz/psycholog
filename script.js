@@ -20,20 +20,18 @@ peopleWraps.addEventListener("mousedown", (event) => {
 peopleWraps.addEventListener("mousemove", (event) => {
   const parentRect = peopleWraps.getBoundingClientRect().left;
   const cursorX = event.clientX;
+  // console.log(cursorX);
   const offsetX = cursorX - parentRect;
   const percentage = (offsetX / width) * 100;
   currentX = percentage;
 });
 
 peopleWraps.addEventListener("mouseup", (event) => {
-  // console.log("cur", currentX);
-  // console.log("start", startX);
   if (currentX > startX) {
     if (isDragging) {
       dotsItem.forEach((el, index) => {
         if (el.classList.contains("dots__item_active")) {
           currInd = index - 1;
-          console.log(currInd);
           if (index > 0) {
             el.classList.remove("dots__item_active");
             dotsItem[currInd].classList.add("dots__item_active");
@@ -45,15 +43,18 @@ peopleWraps.addEventListener("mouseup", (event) => {
     }
   } else if (currentX < startX) {
     if (isDragging) {
+      let x = 0;
       dotsItem.forEach((el, index) => {
         if (el.classList.contains("dots__item_active")) {
-          currInd = index + 1;
-          console.log(currInd);
-          if (index < 4) {
-            el.classList.remove("dots__item_active");
-            dotsItem[currInd].classList.add("dots__item_active");
-            step = width * currInd;
-            peopleInner.style.left = `-${step}px`;
+          if (x === 0) {
+            currInd = index + 1;
+            if (index < dotsItem.length - 1) {
+              el.classList.remove("dots__item_active");
+              dotsItem[currInd].classList.add("dots__item_active");
+              step = width * currInd;
+              peopleInner.style.left = `-${step}px`;
+            }
+            x = 1;
           }
         }
       });
@@ -126,48 +127,57 @@ dotsItem.forEach((elem, index) => {
     peopleInner.style.left = `-${step}px`;
   });
 });
-
-// ============================================
-// ============================================
-// ============================================
-// ============================================
-// ============================================
-// ============================================
 // ============================================
 // ============================================
 // ============================================
 const reviewsCards = document.querySelector(".reviews__cards");
 const reviewsCard = document.querySelectorAll(".reviews__card");
 const dotsItem1 = document.querySelectorAll(".dots__item1");
+const reviewsCard1 = reviewsCard[0];
+console.log(getComputedStyle(reviewsCard1).width);
 let step1 = 0;
 
 dotsItem1.forEach((item) => {
   item.addEventListener("click", (event) => {
-    dotsItem1.forEach((el) => {
-      if (event.target === el) {
+    dotsItem1.forEach((el, index) => {
+      if (el === event.target) {
         el.classList.add("dots__item1_active");
+        step1 = getComputedStyle(reviewsCard1).width * index;
+        console.log(step1);
       } else {
         el.classList.remove("dots__item1_active");
       }
-      reviewsCard.forEach((elem) => {
-        elem.classList.remove("reviews__card_op");
-      });
-      if (event.target === dotsItem1[0]) {
-        step1 = 0;
-        reviewsCard[2].classList.add("reviews__card_op");
-      } else if (event.target === dotsItem1[1]) {
-        step1 = -570;
-        reviewsCard[3].classList.add("reviews__card_op");
-      } else if (event.target === dotsItem1[2]) {
-        step1 = -1140;
-        reviewsCard[4].classList.add("reviews__card_op");
-      } else if (event.target === dotsItem1[3]) {
-        step1 = -1710;
-        reviewsCard[5].classList.add("reviews__card_op");
-      } else if (event.target === dotsItem1[4]) {
-        step1 = -2280;
-      }
-      reviewsCards.style.left = `${step1}px`;
+      reviewsCards.style.left = `${step1}`;
     });
   });
 });
+// dotsItem1.forEach((item) => {
+//   item.addEventListener("click", (event) => {
+//     dotsItem1.forEach((el) => {
+//       if (event.target === el) {
+//         el.classList.add("dots__item1_active");
+//       } else {
+//         el.classList.remove("dots__item1_active");
+//       }
+//       reviewsCard.forEach((elem) => {
+//         elem.classList.remove("reviews__card_op");
+//       });
+//       if (event.target === dotsItem1[0]) {
+//         step1 = 0;
+//         reviewsCard[2].classList.add("reviews__card_op");
+//       } else if (event.target === dotsItem1[1]) {
+//         step1 = -570;
+//         reviewsCard[3].classList.add("reviews__card_op");
+//       } else if (event.target === dotsItem1[2]) {
+//         step1 = -1140;
+//         reviewsCard[4].classList.add("reviews__card_op");
+//       } else if (event.target === dotsItem1[3]) {
+//         step1 = -1710;
+//         reviewsCard[5].classList.add("reviews__card_op");
+//       } else if (event.target === dotsItem1[4]) {
+//         step1 = -2280;
+//       }
+//       reviewsCards.style.left = `${step1}px`;
+//     });
+//   });
+// });
