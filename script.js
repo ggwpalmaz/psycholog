@@ -134,20 +134,27 @@ const reviewsCards = document.querySelector(".reviews__cards");
 const reviewsCard = document.querySelectorAll(".reviews__card");
 const dotsItem1 = document.querySelectorAll(".dots__item1");
 const reviewsCard1 = reviewsCard[0];
-console.log(getComputedStyle(reviewsCard1).width);
+let reviewsCard1Width = parseFloat(getComputedStyle(reviewsCard1).width);
+console.log(reviewsCard1Width);
 let step1 = 0;
+let gap = 20;
 
 dotsItem1.forEach((item) => {
   item.addEventListener("click", (event) => {
     dotsItem1.forEach((el, index) => {
       if (el === event.target) {
         el.classList.add("dots__item1_active");
-        step1 = getComputedStyle(reviewsCard1).width * index;
-        console.log(step1);
+        if (index === 0) {
+          step1 = reviewsCard1Width * index;
+        } else {
+          step1 = reviewsCard1Width * index + (gap * index + 20);
+          console.log(step1);
+        }
+
+        reviewsCards.style.left = `-${step1}px`;
       } else {
         el.classList.remove("dots__item1_active");
       }
-      reviewsCards.style.left = `${step1}`;
     });
   });
 });
