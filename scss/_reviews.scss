@@ -3,10 +3,10 @@
   flex-direction: column;
   padding-bottom: 158px;
   @media (max-width: 1224px) {
-    padding: 0 40px 98px;
+    padding: 0 25px 98px 40px;
   }
   @media (max-width: 768px) {
-    padding: 0 40px 104px;
+    padding: 0 25px 104px 40px;
   }
   @media (max-width: 360px) {
     padding: 0 20px 81px;
@@ -55,8 +55,10 @@
   }
   &__card {
     // border: 1px solid rgb(250, 2, 2);
-    flex-grow: 0;
-    min-width: 550px;
+    // flex-grow: 0;
+    min-width: calc(
+      63.25rem - clamp(28.875rem, 40.6607rem + -9.8214vw, 34.375rem)
+    );
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px 30px;
@@ -67,7 +69,9 @@
     // transition: 0.3s;
     cursor: pointer;
     @media (max-width: 1024px) {
-      min-width: 462px;
+      min-width: calc(
+        49.75rem - clamp(20.875rem, 52.875rem + -50vw, 28.875rem)
+      );
       gap: 10px 20px;
     }
     @media (max-width: 950px) {
@@ -75,9 +79,21 @@
       grid-template-columns: repeat(3, auto);
       gap: 20px 15px;
     }
-    @media (max-width: 700px) {
-      max-width: 320px;
+    @media (max-width: 768px) {
+      // min-width: calc(
+      //   40.875rem - clamp(20rem, 21.6471rem + -3.4314vw, 20.875rem)
+      // );
+      min-width: 334px;
     }
+    @media (max-width: 767px) {
+      // min-width: calc(
+      //   40.875rem - clamp(20rem, 21.6471rem + -3.4314vw, 20.875rem)
+      // );
+      // width: 100%;
+    }
+    // @media (max-width: 700px) {
+    //   max-width: 320px;
+    // }
     &_none {
       @media (max-width: 700px) {
         display: none;

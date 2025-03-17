@@ -130,14 +130,48 @@ dotsItem.forEach((elem, index) => {
 // ============================================
 // ============================================
 // ============================================
+const reviewsWrapp = document.querySelector(".reviews__wrapp");
 const reviewsCards = document.querySelector(".reviews__cards");
 const reviewsCard = document.querySelectorAll(".reviews__card");
 const dotsItem1 = document.querySelectorAll(".dots__item1");
 const reviewsCard1 = reviewsCard[0];
 let reviewsCard1Width = parseFloat(getComputedStyle(reviewsCard1).width);
-console.log(reviewsCard1Width);
+// console.log(reviewsCard1Width);
 let step1 = 0;
 let gap = 20;
+let width1;
+
+function init1() {
+  if (window.innerWidth <= 767) {
+    reviewsCards.style.width =
+      reviewsWrapp.offsetWidth * reviewsCard.length +
+      gap * reviewsCard.length -
+      20 +
+      "px";
+    reviewsCard1Width = reviewsWrapp.offsetWidth;
+    reviewsCard.forEach((el) => {
+      el.style.width = reviewsWrapp.offsetWidth + "px";
+      console.log(el.style.width);
+    });
+  } else {
+    reviewsCard1Width = parseFloat(getComputedStyle(reviewsCard1).width);
+    reviewsCard.forEach((el) => {
+      el.style.width = 0 + "px";
+    });
+  }
+  // console.log(reviewsCard1Width);
+  dotsItem.forEach((element, index) => {
+    if (element.classList.contains("dots__item_active")) {
+      if (index !== 0) {
+        step1 = reviewsCard1Width * index + gap * index;
+      } else {
+        step1 = reviewsCard1Width * index;
+      }
+      reviewsCards.style.left = `-${step1}px`;
+    }
+  });
+}
+init1();
 
 dotsItem1.forEach((item) => {
   item.addEventListener("click", (event) => {
@@ -147,8 +181,7 @@ dotsItem1.forEach((item) => {
         if (index === 0) {
           step1 = reviewsCard1Width * index;
         } else {
-          step1 = reviewsCard1Width * index + (gap * index + 20);
-          console.log(step1);
+          step1 = reviewsCard1Width * index + gap * index;
         }
 
         reviewsCards.style.left = `-${step1}px`;
@@ -158,33 +191,8 @@ dotsItem1.forEach((item) => {
     });
   });
 });
-// dotsItem1.forEach((item) => {
-//   item.addEventListener("click", (event) => {
-//     dotsItem1.forEach((el) => {
-//       if (event.target === el) {
-//         el.classList.add("dots__item1_active");
-//       } else {
-//         el.classList.remove("dots__item1_active");
-//       }
-//       reviewsCard.forEach((elem) => {
-//         elem.classList.remove("reviews__card_op");
-//       });
-//       if (event.target === dotsItem1[0]) {
-//         step1 = 0;
-//         reviewsCard[2].classList.add("reviews__card_op");
-//       } else if (event.target === dotsItem1[1]) {
-//         step1 = -570;
-//         reviewsCard[3].classList.add("reviews__card_op");
-//       } else if (event.target === dotsItem1[2]) {
-//         step1 = -1140;
-//         reviewsCard[4].classList.add("reviews__card_op");
-//       } else if (event.target === dotsItem1[3]) {
-//         step1 = -1710;
-//         reviewsCard[5].classList.add("reviews__card_op");
-//       } else if (event.target === dotsItem1[4]) {
-//         step1 = -2280;
-//       }
-//       reviewsCards.style.left = `${step1}px`;
-//     });
-//   });
-// });
+window.addEventListener("resize", () => {
+  // console.log(reviewsCard1Width);
+  // console.log("gg");
+  init1();
+});

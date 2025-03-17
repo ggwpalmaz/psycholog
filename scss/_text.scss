@@ -1,7 +1,7 @@
 .text {
   padding-bottom: 156px;
   @media (max-width: 1224px) {
-    padding: 0 40px 186px 40px;
+    padding: 0 15px 166px 40px;
   }
   @media (max-width: 768px) {
     padding-bottom: 116px;
@@ -62,7 +62,7 @@
     color: $color-black;
     font-family: $font-family-reg;
     font-size: $font-size-16;
-    line-height: 140%;
+    line-height: 146%;
     letter-spacing: 0%;
     text-align: left;
     @media (max-width: 360px) {
