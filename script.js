@@ -140,6 +140,10 @@ let reviewsCard1Width = parseFloat(getComputedStyle(reviewsCard1).width);
 let step1 = 0;
 let gap = 20;
 let width1;
+let isDragging1 = false;
+let startX1;
+let currentX1;
+let currInd1 = 0;
 
 function init1() {
   if (window.innerWidth <= 767) {
@@ -151,7 +155,7 @@ function init1() {
     reviewsCard1Width = reviewsWrapp.offsetWidth;
     reviewsCard.forEach((el) => {
       el.style.width = reviewsWrapp.offsetWidth + "px";
-      console.log(el.style.width);
+      // console.log(el.style.width);
     });
   } else {
     reviewsCard1Width = parseFloat(getComputedStyle(reviewsCard1).width);
@@ -160,8 +164,8 @@ function init1() {
     });
   }
   // console.log(reviewsCard1Width);
-  dotsItem.forEach((element, index) => {
-    if (element.classList.contains("dots__item_active")) {
+  dotsItem1.forEach((element, index) => {
+    if (element.classList.contains("dots__item1_active")) {
       if (index !== 0) {
         step1 = reviewsCard1Width * index + gap * index;
       } else {
@@ -195,4 +199,63 @@ window.addEventListener("resize", () => {
   // console.log(reviewsCard1Width);
   // console.log("gg");
   init1();
+});
+// =======================================
+reviewsWrapp.addEventListener("mousedown", (event) => {
+  isDragging1 = true;
+  const parentRect = reviewsWrapp.getBoundingClientRect().left;
+  const cursorX = event.clientX;
+  const offsetX = cursorX - parentRect;
+  const percentage = (offsetX / width) * 100;
+  startX1 = percentage;
+});
+reviewsWrapp.addEventListener("mousemove", (event) => {
+  const parentRect = reviewsWrapp.getBoundingClientRect().left;
+  const cursorX = event.clientX;
+  // console.log(cursorX);
+  const offsetX = cursorX - parentRect;
+  const percentage = (offsetX / width) * 100;
+  currentX1 = percentage;
+});
+
+reviewsWrapp.addEventListener("mouseup", (event) => {
+  if (currentX1 > startX1) {
+    if (isDragging1) {
+      dotsItem1.forEach((el, index) => {
+        if (el.classList.contains("dots__item1_active")) {
+          currInd1 = index - 1;
+          if (index > 0) {
+            el.classList.remove("dots__item1_active");
+            dotsItem1[currInd1].classList.add("dots__item1_active");
+            step1 = reviewsCard1Width * currInd1 + gap * currInd1;
+            reviewsCards.style.left = `-${step1}px`;
+          }
+        }
+      });
+    }
+  } else if (currentX1 < startX1) {
+    if (isDragging1) {
+      let x = 0;
+      dotsItem1.forEach((el, index) => {
+        if (el.classList.contains("dots__item1_active")) {
+          if (x === 0) {
+            currInd1 = index + 1;
+            if (index < dotsItem1.length - 1) {
+              el.classList.remove("dots__item1_active");
+              dotsItem1[currInd1].classList.add("dots__item1_active");
+              step1 = reviewsCard1Width * currInd1 + gap * currInd1;
+              reviewsCards.style.left = `-${step1}px`;
+            }
+            x = 1;
+          }
+        }
+      });
+    }
+  }
+});
+reviewsWrapp.addEventListener("mouseup", (event) => {
+  isDragging1 = false;
+});
+reviewsWrapp.addEventListener("mouseleave", (event) => {
+  isDragging1 = false;
 });

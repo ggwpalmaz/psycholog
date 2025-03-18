@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -78,6 +78,7 @@
             <button class="btn btn_pd">Начать беседу</button>
           </section>
           <section class="session__right">
+            <h2 class="visually-hidden">picture</h2>
             <picture class="session__pic">
               <source type="image/avif" srcset="./img/headman.avif" />
               <source type="image/webp" srcset="./img/headman.webp" />
@@ -93,7 +94,7 @@
               class="iframe"
               src="https://www.youtube.com/embed/TtkFsfOP9QI?si=8eFiQw2jJnzK1vLn"
               title="YouTube video player"
-              frameborder="0"
+              style="border: none"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
@@ -111,11 +112,11 @@
                     width="62.363"
                     height="62.6733"
                     rx="12"
-                    fill="url(#pattern0_1985_324)"
+                    fill="url(#pattern0_1985_3241)"
                   />
                   <defs>
                     <pattern
-                      id="pattern0_1985_324"
+                      id="pattern0_1985_3241"
                       patternContentUnits="objectBoundingBox"
                       width="1"
                       height="1"
@@ -180,7 +181,7 @@
             <p class="people__tag">Одиночество</p>
             <p class="people__tag">Одиночество</p>
             <p class="people__tag">Отношения с близкими</p>
-            <button class="btn btn_pd btn__pad">+ 300 психологов</button>
+            <button class="btn btn_pd btn_pad">+ 300 психологов</button>
           </section>
           <div class="people__wraps">
             <div class="people__inner">
@@ -1424,6 +1425,7 @@
             </ul>
           </section>
           <section class="about__right">
+            <h2 class="visually-hidden">picture</h2>
             <picture class="about__pic">
               <source type="image/avif" srcset="./img/helpu.avif" />
               <source type="image/webp" srcset="./img/helpu.webp" />
@@ -1514,6 +1516,7 @@
               </ul>
             </section>
             <section class="work__right">
+              <h4 class="visually-hidden">picture</h4>
               <picture class="work__pic">
                 <source type="image/avif" srcset="./img/howwe.avif" />
                 <source type="image/webp" srcset="./img/howwe.webp" />
@@ -1539,7 +1542,7 @@
                   class="iframe iframe_wd"
                   src="https://www.youtube.com/embed/TtkFsfOP9QI?si=8eFiQw2jJnzK1vLn"
                   title="YouTube video player"
-                  frameborder="0"
+                  style="border: none"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen
@@ -1654,6 +1657,7 @@
               </article>
             </section>
             <section class="order__center">
+              <h4 class="visually-hidden">pictures</h4>
               <picture class="order__pic">
                 <source type="image/avif" srcset="./img/Mobile.avif" />
                 <source type="image/webp" srcset="./img/Mobile.webp" />
@@ -1666,6 +1670,7 @@
               </picture>
             </section>
             <section class="order__right">
+              <h4 class="visually-hidden">cards</h4>
               <article class="order__card">
                 <h5 class="order__ttl order__ttl_second">Выберите психолога</h5>
                 <p class="order__text">Выберите понравившегося психолога</p>
@@ -1688,7 +1693,7 @@
             </p>
             <p class="order__info-text2">Выберите понравившегося психолога</p>
           </section>
-          <button class="btnsecondary order_btnsecondary">
+          <button class="btnsecondary order__btnsecondary">
             Начать общение
           </button>
         </section>
@@ -1851,12 +1856,12 @@
                       height="1"
                     >
                       <use
-                        xlink:href="#image0_1985_324"
+                        xlink:href="#image0_1985_3242"
                         transform="scale(0.00497512 0.0049505)"
                       />
                     </pattern>
                     <image
-                      id="image0_1985_324"
+                      id="image0_1985_3242"
                       width="201"
                       height="202"
                       xlink:href="data:image/png;base64,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"
@@ -1895,6 +1900,7 @@
             </footer>
           </article>
           <article class="mobile__wrap">
+            <h2 class="visually-hidden">mobile</h2>
             <picture class="mobile__pic">
               <source type="image/avif" srcset="./img/phone_p.avif" />
               <source type="image/webp" srcset="./img/phone_p.webp" />
@@ -2150,6 +2156,7 @@
         <section class="text">
           <h2 class="text__title">Детский психолог онлайн</h2>
           <section class="text__content">
+            <h2 class="visually-hidden">Детский психолог онлайн</h2>
             <article class="text__block">
               <h3 class="text__ttl">Чем поможет детский психолог онлайн?</h3>
               <p class="text__text">
@@ -2265,7 +2272,9 @@
         </section>
       </main>
       <footer class="footer">
+        <h2 class="visually-hidden">footer logo</h2>
         <section class="footer__left">
+          <h3 class="visually-hidden">footer logo</h3>
           <div class="logo">
             <a class="logo__link" href="#"
               ><picture class="logo__pic logo__pic_size">
@@ -2296,7 +2305,9 @@
           </nav>
         </section>
         <section class="footer__right">
-          <header class="footer__head">
+          <h3 class="visually-hidden">footer logo</h3>
+          <section class="footer__head">
+            <h4 class="visually-hidden">footer logo</h4>
             <a class="footer__link">
               <svg class="footer__svg" viewBox="0 0 40 40" fill="none">
                 <g clip-path="url(#a)">
@@ -2314,7 +2325,7 @@
             </a>
             <a class="footer__link">
               <svg class="footer__svg" viewBox="0 0 40 40" fill="none">
-                <g clip-path="url(#a)">
+                <g clip-path="url(#a1)">
                   <path
                     fill="url(#b)"
                     d="M2.5 2.722C-.643 5.987 0 9.455 0 19.992c0 8.75-1.527 17.521 6.463 19.586 2.495.642 24.602.642 27.093-.003 3.327-.858 6.034-3.557 6.404-8.262.051-.656.051-21.975-.002-22.645-.393-5.011-3.478-7.9-7.543-8.485C31.483.048 31.297.008 26.517 0 9.562.008 5.845-.747 2.5 2.722Z"
@@ -2333,11 +2344,11 @@
                     y2="5.27"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#FD5" />
-                    <stop offset=".5" stop-color="#FF543E" />
-                    <stop offset="1" stop-color="#C837AB" />
+                    <stop offset="0%" stop-color="#FD5" />
+                    <stop offset="50%" stop-color="#FF543E" />
+                    <stop offset="100%" stop-color="#C837AB" />
                   </linearGradient>
-                  <clipPath id="a">
+                  <clipPath id="a1">
                     <path fill="#fff" d="M0 0h40v40H0z" />
                   </clipPath>
                 </defs>
@@ -2345,14 +2356,14 @@
             </a>
             <a class="footer__link">
               <svg class="footer__svg" viewBox="0 0 40 40" fill="none">
-                <g clip-path="url(#a)">
+                <g clip-path="url(#a2)">
                   <path
                     fill="#0172B4"
                     d="M34.14 0H5.86A5.866 5.866 0 0 0 0 5.86v28.28C0 37.372 2.629 40 5.86 40h28.28c3.231 0 5.86-2.629 5.86-5.86V5.86C40 2.628 37.371 0 34.14 0Zm-20 31.719H9.454V15.312h4.688V31.72Zm0-18.75H9.454V8.28h4.688v4.688Zm16.407 18.75h-4.688v-9.375A2.347 2.347 0 0 0 23.516 20a2.347 2.347 0 0 0-2.344 2.344v9.375h-4.688V15.312h4.688v.884c1.228-.382 2.026-.884 3.515-.884 3.18.004 5.86 2.856 5.86 6.226v10.18Z"
                   />
                 </g>
                 <defs>
-                  <clipPath id="a">
+                  <clipPath id="a2">
                     <path fill="#fff" d="M0 0h40v40H0z" />
                   </clipPath>
                 </defs>
@@ -2366,8 +2377,9 @@
                 />
               </svg>
             </a>
-          </header>
-          <footer class="footer__foot">
+          </section>
+          <section class="footer__foot">
+            <h4 class="visually-hidden">footer link</h4>
             <a class="footer__links" href="mailto:info@speak.help"
               ><svg
                 class="footer__icon"
@@ -2396,11 +2408,11 @@
                   />
                 </svg>
                 <p class="footer__wraps">
-                  33 W 60th Street, 8th FI New York, NY 10023
+                  33 W 60th Street, 8th FI New York, NY 10024
                 </p>
               </a>
             </address>
-          </footer>
+          </section>
         </section>
       </footer>
     </div>

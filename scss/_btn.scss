@@ -16,7 +16,7 @@
       @include btn($fz: 12px, $pdb: 6px 15px);
     }
   }
-  &__pad {
+  &_pad {
     padding: 10px 30px;
     @media (max-width: 769px) {
       @include btn($fz: 16px, $pdb: 10px 30px);

@@ -212,11 +212,11 @@ a {
     background: linear-gradient(225deg, rgb(0, 185, 182) 0%, rgb(0, 205, 172) 100%);
   }
 }
-.btn__pad {
+.btn_pad {
   padding: 10px 30px;
 }
 @media (max-width: 769px) {
-  .btn__pad {
+  .btn_pad {
     font-family: "Inter-Bold", sans-serif;
     line-height: 120%;
     letter-spacing: 0%;
@@ -230,7 +230,7 @@ a {
   }
 }
 @media (max-width: 369px) {
-  .btn__pad {
+  .btn_pad {
     font-family: "Inter-Bold", sans-serif;
     line-height: 120%;
     letter-spacing: 0%;
@@ -2278,11 +2278,11 @@ a {
   letter-spacing: 0%;
   text-align: left;
 }
-.order_btnsecondary {
+.order__btnsecondary {
   margin: -21px 0 0 -10px;
 }
 @media (max-width: 768px) {
-  .order_btnsecondary {
+  .order__btnsecondary {
     margin: 0;
   }
 }
@@ -3002,6 +3002,7 @@ a {
   }
 }
 .reviews__card {
+  border: 1px solid rgb(250, 2, 2);
   min-width: calc(63.25rem - clamp(28.875rem, 40.6607rem - 9.8214vw, 34.375rem));
   display: grid;
   grid-template-columns: auto auto;
@@ -3209,6 +3210,21 @@ a {
 @media (max-width: 1024px) {
   .text__ttl_gg {
     margin-top: -5px;
+  }
+}
+@media (max-width: 900px) {
+  .text__ttl_gg {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .text__ttl_gg {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .text__ttl_gg {
+    margin-top: 0;
   }
 }
 .text__text {
